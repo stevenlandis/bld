@@ -1,0 +1,4 @@
+/build/
+/dist/
+/bld.egg-info/
+__pycache__/
