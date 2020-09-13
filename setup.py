@@ -12,7 +12,7 @@ setuptools.setup(
   description="A project building library and script",
   long_description=long_description,
   long_description_content_type="text/markdown",
-  # url="https://example.com",
+  url="https://github.com/stevenlandis/bld",
   packages=setuptools.find_packages(),
   classifiers=[
     "Programming Language :: Python :: 3",
