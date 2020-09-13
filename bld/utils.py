@@ -43,7 +43,7 @@ def getDir(path):
   assert(isdir(path) or not exists(path))
   return Dir(path)
 
-def needsUpdate(sources, results):
+def needsUpdate(sources, results, alwaysUpdate = False):
   if type(sources) != list:
     sources = [sources]
   if type(results) != list:
@@ -73,7 +73,7 @@ def needsUpdate(sources, results):
         raise Exception(f'Error: file "{file.name}" does not exist.')
     sourceTime = max(sourceTime, time)
 
-  return sourceTime >= resultTime
+  return alwaysUpdate or sourceTime >= resultTime
 
 def copyFile(f1, f2):
   f1 = getFile(f1)

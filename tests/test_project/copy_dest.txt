@@ -1,0 +1,4 @@
+This is some text I want to copy from
+copy_source.txt
+to
+copy_dest.txt
