@@ -8,6 +8,7 @@ fcnPattern = re.compile(r'^def\s+(\w[\w\d]*)\s*\(\s*\):\s*$', re.MULTILINE)
 def main():
   if not os.path.isfile('build.py'):
     print('build.py file not found')
+    return
 
   parser = argparse.ArgumentParser(description='Build a project')
   parser.add_argument(
